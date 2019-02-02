@@ -1,6 +1,14 @@
 <html>
 <body>
-    <p>Hi there!</p>
-    <p>It works!</p>
+    <div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+
+{% for post in posts %}
+    <div>
+        <h1><a href="">{{ post.nome }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
 </body>
 </html>
