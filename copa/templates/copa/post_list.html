@@ -1,14 +1,246 @@
-<html>
-<body>
-    <div>
-    <h1><a href="/">Django Girls Blog</a></h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" type="text/css">
+
+    <title>Hello, world!</title>
+      <style type="text/css">
+    @media only screen and (max-width: 400px) {
+    .mobile{ display: inline !important; }
+    }
+    @media only screen and (min-width: 500px) {
+    .desktop-esconder{ display: none !important; }
+    }
+    @media only screen and (max-width: 400px) {
+    .mobile-esconder{ display: none !important; }
+    }
+    #bordas{
+        border: 1px solid;
+        }
+
+     #topo-mobile{
+        background-image: url(topo-mobile.png);
+        //background-color: #FF8C00;
+        height: 45px;
+        width: 275px;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        webkit-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        background-size: 100% 100%;
+        }
+     #side-mobile{
+        //background-color: #FFFF00;
+        height: 45px;
+        width: 75px;
+        align: center;
+
+        }
+        #botao-side-mobile{
+            -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+            -moz-appearance: none; /* Remove estilo padrão do FireFox */
+            appearance: none; /* Remove estilo padrão do FireFox*/
+            background: url(botao-side-mobile.png) no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
+            background-position: left;  /*Posição da imagem do background*/
+            width: 45px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+            height: 45px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+            border:0px solid #ddd;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+              webkit-background-size: 100% 100%;
+            -o-background-size: 100% 100%;
+            -moz-background-size: 100% 100%;
+            background-size: 100% 100%;
+            }
+    #principal-mobile{
+        //background-image: url(topo-mobile.png);
+        background-color: #FFFFFF;
+        height: 550px;
+        width: 360px;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        webkit-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        background-size: 100% 100%;
+        }
+    #linha1{
+        //background-color: #FFFF00;
+        padding-top: 60px;
+        padding-left: 30px;
+        height: 70px;
+        }
+    #linha2{
+        //background-color: #FFFF00;
+        padding-top: 100px;
+        padding-left: 30px;
+        height: 70px;
+        }
+    #linha3{
+        //background-color: #FFFF00;
+        padding-top: 110px;
+        padding-left: 30px;
+        height: 70px;
+        }
+    #linha4{
+        //background-color: #FFFF00;
+        padding-top: 110px;
+        padding-left: 30px;
+        height: 70px;
+        }
+    #rodape-mobile{
+        background-image: url(rodape-mobile.png);
+        height: 45px;
+        width: 358px;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        webkit-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        background-size: 100% 100%;
+        }
+
+    #topo{
+        background-color: #FF8C00;
+        height: 180px;
+        }
+    #linha1coluna1{
+        background-color: #FFFF00;
+        height: 300px;
+        }
+    #linha1coluna2{
+        background-color: #FFFF00;
+        height: 300px;
+        }
+    #linha1coluna3{
+        background-color: #FFFF00;
+        height: 300px;
+        }
+    #linha1coluna4{
+        background-color: #FFFF00;
+        height: 300px;
+        }
+    #banner1{
+        background-color: #FF8C00;
+        height: 180px;
+        }
+    #linha2coluna1{
+        background-color: #FFFF00;
+        height: 220px;
+        }
+    #linha2coluna2{
+        background-color: #FFFF00;
+        height: 220px;
+        }
+    #linha2coluna3{
+        background-color: #FFFF00;
+        height: 220px;
+        }
+    #linha2coluna4{
+        background-color: #FFFF00;
+        height: 220px;
+        }
+    #banner2{
+        background-color: #FF8C00;
+        height: 180px;
+        }
+    #linha3coluna1{
+        background-color: #FFFF00;
+        height: 300px;
+        }
+    #linha3coluna2{
+        background-color: #FFFF00;
+        height: 300px;
+        }
+    #linha3coluna3{
+        background-color: #FFFF00;
+        height: 300px;
+        }
+    #linha3coluna4{
+        background-color: #FFFF00;
+        height: 300px;
+        }
+    #rodape{
+        background-color: #FF8C00;
+        height: 180px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div id="bordas" class="row">
+            <div id="topo" class="col-sm-12 mobile-esconder"><h1>TOPO DESK</h1></div>
+            <div id="topo-mobile" class="desktop-esconder"></div>
+            <div id="side-mobile" class="desktop-esconder">
+                <select id=botao-side-mobile>
+                    <option value=""  selected="selected"></option>
+                    <option value="amb"><a href="Teste.html">TESTE</a></option>
+                    <option value="usa"><a href="Teste.html">TESTE1</a></option>
+                    <option value="ca"><a href="Teste.html">TESTE2</a></option>
+                </select>
+            </div>
+        </div>
+        <div id="bordas" class="row">
+            <div id="principal-mobile" class="desktop-esconder">
+                <div id="linha1"><a href="curriculum.html"><img src="botao-curriculum.png"></a>&nbsp;&nbsp;
+                    <a href="calendario.html"><img src="botao-calendario.png"></a>&nbsp;&nbsp;
+                    <a href="desafios.html"><img src="botao-desafios.png"></a>
+                </div>
+                <div id="linha2"><a href="cal.html"><img src="botao-cal.png"></a>&nbsp;&nbsp;
+                    <a href="inscricoes.html"><img src="botao-inscricoes.png"></a>&nbsp;&nbsp;
+                    <a href="desafios.html"><img src="botao-desafios.png"></a>
+                </div>
+                <div id="linha3"><a href="campeonatos.html"><img src="botao-campeonatos.png"></a>&nbsp;&nbsp;
+                    <a href="ranking.html"><img src="botao-ranking.png"></a>&nbsp;&nbsp;
+                    <a href="resultados.html"><img src="botao-resultados.png"></a>
+                </div>
+                <div id="linha4"><a href="regulamentos.html"><img src="botao-regulamentos.png"></a>&nbsp;&nbsp;
+                    <a href="certificados.html"><img src="botao-certificados.png"></a>&nbsp;&nbsp;
+                    <a href="fale.html"><img src="botao-fale.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="linha1coluna1" class="col-sm-3 d-none d-sm-block"><h1>linha1coluna1</h1></div>
+            <div id="linha1coluna2" class="col-sm-3 d-none d-sm-block"><h1>linha1coluna2</h1></div>
+            <div id="linha1coluna3" class="col-sm-3 d-none d-sm-block"><h1>linha1coluna3</h1></div>
+            <div id="linha1coluna4" class="col-sm-3 d-none d-sm-block"><h1>linha1coluna4</h1></div>
+        </div>
+        <div class="row">
+            <div id="banner1" class="col-sm-12 d-none d-sm-block"><h1>Banner 1</h1></div>
+        </div>
+        <div class="row">
+            <div id="linha2coluna1" class="col-sm-3 d-none d-sm-block"><h1>linha2coluna1</h1></div>
+            <div id="linha2coluna2" class="col-sm-3 d-none d-sm-block"><h1>linha2coluna2</h1></div>
+            <div id="linha2coluna3" class="col-sm-3 d-none d-sm-block"><h1>linha2coluna3</h1></div>
+            <div id="linha2coluna4" class="col-sm-3 d-none d-sm-block"><h1>linha2coluna4</h1></div>
+        </div>
+        <div class="row">
+            <div id="banner2" class="col-sm-12 d-none d-sm-block"><h1>Banner 2</h1></div>
+        </div>
+        <div class="row">
+            <div id="linha3coluna1" class="col-sm-3 d-none d-sm-block"><h1>linha3coluna1</h1></div>
+            <div id="linha3coluna2" class="col-sm-3 d-none d-sm-block"><h1>linha3coluna2</h1></div>
+            <div id="linha3coluna3" class="col-sm-3 d-none d-sm-block"><h1>linha3coluna3</h1></div>
+            <div id="linha3coluna4" class="col-sm-3 d-none d-sm-block"><h1>linha3coluna4</h1></div>
+        </div>
+        <div id="bordas" class="row">
+            <div id="rodape" class="col-sm-12 mobile-esconder"><h1>RODAPE DESK</h1></div>
+            <div id="rodape-mobile" class="desktop-esconder"></div>
+        </div>
     </div>
 
-{% for post in posts %}
-    <div>
-        <h1><a href="">{{ post.nome }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
